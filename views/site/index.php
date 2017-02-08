@@ -2,23 +2,29 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'SGC';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Bienvenido!</h1>
-
-        <p class="lead">Si ves esta pagina, significa que estas corriendo el servidor de manera correcta ;)</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Fierro Pariente</a></p>
+        <h1>Sistema Gestor de Calidad</h1>
+        <p class="lead">
+        <?php
+          Yii::$app->user->isGuest ? (
+            'Para hacer uso de la aplicacion, es necesario que inicie sesion'
+          ) : (
+            'Bienvenido, '.Yii::$app->user->identity->username
+          )
+         ?>
+         </p>
+        <p><a class="btn btn-lg btn-success" href="/index.php?r=site%2Flogin">Iniciar Sesion</a></p>
     </div>
 
     <div class="body-content">
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Documentacion</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -28,7 +34,7 @@ $this->title = 'My Yii Application';
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Tutorial</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -38,7 +44,7 @@ $this->title = 'My Yii Application';
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Mision</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
