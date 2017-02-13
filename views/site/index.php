@@ -9,7 +9,12 @@ $this->title = 'SGC';
     <div class="jumbotron">
         <h1>Sistema Gestor de Calidad</h1>
         <p class="lead">Para hacer uso de la aplicacion, es necesario que inicie sesion</p>
-        <p><a class="btn btn-lg btn-success" href="/index.php?r=site%2Flogin">Iniciar Sesion</a></p>
+        <p>
+        <?php Yii::$app->user->isGuest ? (
+            '<a class="btn btn-lg btn-success" href="/index.php?r=site%2Flogin">Iniciar Sesion</a>'
+          )
+          ?>
+          </p>
     </div>
 
     <div class="body-content">
