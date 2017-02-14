@@ -10,8 +10,15 @@ $this->title = 'SGC';
         <h1>Sistema Gestor de Calidad</h1>
         <p class="lead">Para hacer uso de la aplicacion, es necesario que inicie sesion</p>
         <p>
-            '<a class="btn btn-lg btn-success" href="/index.php?r=site%2Flogin">Iniciar Sesion</a>'
-          </p>
+        <?php if(Yii::$app->user->isGuest == null) {
+          echo ("<h4>Bienvenido, ".Yii::$app->user->identity->username."!</h4>");
+        }
+        else{
+          echo ('<a class="btn btn-lg btn-success" href="/index.php?r=site%2Flogin">Iniciar Sesion</a>');
+        }
+           ?>
+         </p>
+
     </div>
 
     <div class="body-content">
