@@ -286,7 +286,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
         /* @var $view View */
         $view = $event->sender;
-        echo $view->renderDynamic('return Yii::$app->getModule("debug")->getToolbarHtml();');
+        echo $view->renderDynamic('return Yii::$app->getModule("' . $this->id . '")->getToolbarHtml();');
 
         // echo is used in order to support cases where asset manager is not available
         echo '<style>' . $view->renderPhpFile(__DIR__ . '/assets/toolbar.css') . '</style>';
@@ -328,7 +328,9 @@ class Module extends \yii\base\Module implements BootstrapInterface
             'db' => ['class' => 'yii\debug\panels\DbPanel'],
             'assets' => ['class' => 'yii\debug\panels\AssetPanel'],
             'mail' => ['class' => 'yii\debug\panels\MailPanel'],
-            'timeline' => ['class' => 'yii\debug\panels\TimelinePanel']
+            'timeline' => ['class' => 'yii\debug\panels\TimelinePanel'],
+            'user' => ['class' => 'yii\debug\panels\UserPanel'],
+            'router' => ['class' => 'yii\debug\panels\RouterPanel']
         ];
     }
 

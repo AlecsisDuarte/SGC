@@ -20,7 +20,8 @@ use yii\mail\BaseMessage;
  *
  * @method Mailer getMailer() returns mailer instance.
  *
- * @property integer $priority Priority value as integer in range: `1..5`, where 1 is the highest priority and
+ * @property array $headers Custom header values of the message. This property is write-only.
+ * @property int $priority Priority value as integer in range: `1..5`, where 1 is the highest priority and
  * 5 is the lowest.
  * @property string $readReceiptTo Receipt receive email addresses. Note that the type of this property
  * differs in getter and setter. See [[getReadReceiptTo()]] and [[setReadReceiptTo()]] for details.
@@ -479,6 +480,20 @@ class Message extends BaseMessage
         return $headers;
     }
 
+    /**
+     * Sets custom header values to the message.
+     * @param array $headers headers in format: `[name => value]`.
+     * @return $this self reference.
+     * @since 2.0.7
+     */
+    public function setHeaders($headers)
+    {
+        foreach ($headers as $name => $value) {
+            $this->setHeader($name, $value);
+        }
+        return $this;
+    }
+
     // SwiftMessage shortcuts :
 
     /**
@@ -505,7 +520,7 @@ class Message extends BaseMessage
 
     /**
      * Set the priority of this message.
-     * @param integer $priority priority value, should be an integer in range: `1..5`,
+     * @param int $priority priority value, should be an integer in range: `1..5`,
      * where 1 is the highest priority and 5 is the lowest.
      * @return $this self reference.
      * @since 2.0.6
@@ -518,7 +533,7 @@ class Message extends BaseMessage
 
     /**
      * Returns the priority of this message.
-     * @return integer priority value as integer in range: `1..5`,
+     * @return int priority value as integer in range: `1..5`,
      * where 1 is the highest priority and 5 is the lowest.
      * @since 2.0.6
      */
