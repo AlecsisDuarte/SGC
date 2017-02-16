@@ -22,9 +22,9 @@ Thumbs.db
 .DS_Store
 
 # phpunit itself is not needed
-phpunit.phar
+#phpunit.phar
 # local phpunit config
 #/phpunit.xml
 
-tests/_output/*
-tests/_support/_generated
+#tests/_output/*
+#tests/_support/_generated
