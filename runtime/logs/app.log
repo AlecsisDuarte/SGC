@@ -89,3 +89,1246 @@ Stack trace:
     'REQUEST_TIME_FLOAT' => 1487195464.3301
     'REQUEST_TIME' => 1487195464
 ]
+2017-02-16 18:38:53 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:38:53 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47122'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270333.022
+    'REQUEST_TIME' => 1487270333
+]
+2017-02-16 18:39:12 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:39:12 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47128'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270352.444
+    'REQUEST_TIME' => 1487270352
+]
+2017-02-16 18:39:32 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:39:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270372.466
+    'REQUEST_TIME' => 1487270372
+]
+2017-02-16 18:39:41 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:39:41 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47136'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270381.987
+    'REQUEST_TIME' => 1487270381
+]
+2017-02-16 18:40:46 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:40:46 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270446.614
+    'REQUEST_TIME' => 1487270446
+]
+2017-02-16 18:41:02 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:41:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47146'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270462.875
+    'REQUEST_TIME' => 1487270462
+]
+2017-02-16 18:41:15 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: app' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:41:15 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270475.189
+    'REQUEST_TIME' => 1487270475
+]
+2017-02-16 18:41:24 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:51
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:41:24 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47154'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270484.564
+    'REQUEST_TIME' => 1487270484
+]
+2017-02-16 18:43:08 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:52
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:43:08 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47158'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270588.409
+    'REQUEST_TIME' => 1487270588
+]
+2017-02-16 18:43:25 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in /var/www/sgc.com/views/layouts/main.php:52
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:43:25 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47162'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270605.042
+    'REQUEST_TIME' => 1487270605
+]
+2017-02-16 18:44:20 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in /var/www/sgc.com/views/layouts/main.php:52
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:44:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270660.507
+    'REQUEST_TIME' => 1487270660
+]
+2017-02-16 18:44:31 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:52
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:44:31 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47170'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270671.287
+    'REQUEST_TIME' => 1487270671
+]
+2017-02-16 18:45:35 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:54
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:45:35 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47174'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270735.83
+    'REQUEST_TIME' => 1487270735
+]
+2017-02-16 18:46:11 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/sgc.com/views/layouts/main.php:54
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-16 18:46:11 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47178'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270771.948
+    'REQUEST_TIME' => 1487270771
+]
+2017-02-16 18:47:01 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in /var/www/sgc.com/views/layouts/main.php:54
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:47:01 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47182'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487270821.518
+    'REQUEST_TIME' => 1487270821
+]
+2017-02-16 18:52:51 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':', expecting ',' or ';'' in /var/www/sgc.com/views/layouts/main.php:53
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:52:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'true'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=true'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487271171.329
+    'REQUEST_TIME' => 1487271171
+]
+2017-02-16 18:53:18 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':', expecting ',' or ';'' in /var/www/sgc.com/views/layouts/main.php:53
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:53:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'true'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=true'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487271198.286
+    'REQUEST_TIME' => 1487271198
+]
+2017-02-16 18:58:21 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ''<span>Favor de Iniciar Sesion' (T_CONSTANT_ENCAPSED_STRING)' in /var/www/sgc.com/views/layouts/main.php:52
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#2 /var/www/sgc.com/controllers/SiteController.php(63): yii\base\Controller->render()
+#3 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#4 /var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/var/www/sgc.com/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#5 /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-16 18:58:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'true'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=true'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487271501.093
+    'REQUEST_TIME' => 1487271501
+]
+2017-02-16 19:00:43 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/layout' in /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('layout', Array)
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/layout', Array)
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-16 19:00:43 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_GET = [
+    'r' => 'site/layout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flayout'
+    'REQUEST_URI' => '/index.php?r=site%2Flayout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487271643.626
+    'REQUEST_TIME' => 1487271643
+]
+2017-02-16 19:00:44 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/error-page' in /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error-page', Array)
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/error-page', Array)
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-16 19:00:44 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_GET = [
+    'r' => 'site/error-page'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/index.php?r=site%2Flayout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Ferror-page'
+    'REQUEST_URI' => '/index.php?r=site%2Ferror-page'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487271644.342
+    'REQUEST_TIME' => 1487271644
+]
+2017-02-16 19:00:44 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/layout' in /var/www/sgc.com/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('layout', Array)
+#1 /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/layout', Array)
+#2 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/sgc.com/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/sgc.com/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/sgc.com/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-16 19:00:44 [127.0.0.1][-][nq29nnolcr932ev1fj8nv37uh7][info][application] $_GET = [
+    'r' => 'site/layout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nq29nnolcr932ev1fj8nv37uh7'
+    '_identity' => '653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'sgc.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sgc.com/index.php?r=site%2Ferror-page'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,es-MX;q=0.6,es;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nq29nnolcr932ev1fj8nv37uh7; _identity=653444f73bf7879a66a295c393df1374a9e6d40238eaab28cfb437d4f297c5dba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=ad25b070c47d6909f32abeebd55c388673bb70aae86fb78b47dc2450787466f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlYtK0Ea5P8V_TlA4SQdvHkV4Nl1V3lK%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at sgc.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'sgc.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/sgc.com/web'
+    'SERVER_ADMIN' => 'alexismiguelduarte@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/sgc.com/web/index.php'
+    'REMOTE_PORT' => '47278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flayout'
+    'REQUEST_URI' => '/index.php?r=site%2Flayout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487271644.894
+    'REQUEST_TIME' => 1487271644
+]

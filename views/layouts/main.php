@@ -6,6 +6,9 @@
  */
 
 use yii\helpers\Html;
+use app\assets\AppAsset;
+
+AppAsset::register($this);
 
 $bundle = yiister\gentelella\assets\Asset::register($this);
 
@@ -37,18 +40,26 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="/" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+                    <a href="/" class="site_title"><i class="glyphicon glyphicon-wrench"></i> <span>SGC!</span></a>
                 </div>
                 <div class="clearfix"></div>
 
                 <!-- menu prile quick info -->
                 <div class="profile">
-                    <div class="profile_pic">
-                        <img src="http://placehold.it/128x128" alt="..." class="img-circle profile_img">
-                    </div>
-                    <div class="profile_info">
-                        <span>Welcome,</span>
-                        <h2>John Doe</h2>
+                  <div class="profile_info">
+                      <?= Yii::$app->user->isGuest ? (
+                          '<div>'+
+                          '<div>'+
+                          '<span>Favor de Iniciar Sesion</span>'+
+                          '<div>'
+                        ):(
+                          '<div class="profile_pic">'+
+                          '<img src="http://placehold.it/128x128" alt="..." class="img-circle profile_img">'+
+                          '<div>'+
+                          '<span>Bienvenido,</span>'+
+                          '<h2><?= Yii::$app->user->identity->username ?></h2>'
+                          )
+                      ?>
                     </div>
                 </div>
                 <!-- /menu prile quick info -->
