@@ -32,6 +32,21 @@ class Controller extends \yii\base\Controller
     public $actionParams = [];
 
 
+    public function filters()
+    {
+        return array('accessControl'); // Realiza acciones de control para las operaciones por CRUD
+    }
+
+    public function accessRules()
+    {
+      return array(
+        array('allow', //Permite a usuarios con inicio de sesion acceder a todas las acciones
+              'users'=>array('@')
+            ),
+        array('deny')
+      );
+    }
+
     /**
      * Renders a view in response to an AJAX request.
      *
@@ -167,7 +182,7 @@ class Controller extends \yii\base\Controller
             }
             return true;
         }
-        
+
         return false;
     }
 

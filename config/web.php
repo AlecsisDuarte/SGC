@@ -4,6 +4,7 @@ $params = require(__DIR__ . '/params.php');
 
 $config = [
     'id' => 'basic',
+    // 'lenguage' => 'es'
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
@@ -16,7 +17,7 @@ $config = [
         ],
         'user' => [
             'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
+            'enableAutoLogin' => false,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',

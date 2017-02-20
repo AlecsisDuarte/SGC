@@ -7,6 +7,8 @@
 
 use yii\helpers\Html;
 use app\assets\AppAsset;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
 
 AppAsset::register($this);
 
@@ -40,27 +42,27 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="/" class="site_title"><i class="glyphicon glyphicon-wrench"></i> <span>SGC!</span></a>
+                    <a href="/" class="site_title"><i class="glyphicon glyphicon-wrench"></i> <span>BurnApps</span></a>
                 </div>
                 <div class="clearfix"></div>
 
                 <!-- menu prile quick info -->
                 <div class="profile">
-                  <div class="profile_info">
-                      <?= Yii::$app->user->isGuest ? (
-                          '<div>'+
-                          '<div>'+
-                          '<span>Favor de Iniciar Sesion</span>'+
-                          '<div>'
-                        ):(
-                          '<div class="profile_pic">'+
-                          '<img src="http://placehold.it/128x128" alt="..." class="img-circle profile_img">'+
-                          '<div>'+
-                          '<span>Bienvenido,</span>'+
-                          '<h2><?= Yii::$app->user->identity->username ?></h2>'
-                          )
-                      ?>
+                  <div class="profile_pic">
+                        <img src="https://cdn.pixabay.com/photo/2016/04/22/04/57/graduation-1345143_1280.png"
+                          alt="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295430_1280.png"
+                          class="img-circle profile_img">
                     </div>
+                    <div class="profile_info">
+                        <span>Bienvenido,</span>
+                        <h2><?= Yii::$app->user->isGuest ?(
+                          'Inicie Sesion'
+                          ):(
+                            Yii::$app->user->identity->username
+                            )?>
+                        </h2>
+                    </div>
+
                 </div>
                 <!-- /menu prile quick info -->
 
@@ -70,12 +72,12 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
                     <div class="menu_section">
-                        <h3>General</h3>
+                        <h3>Opciones</h3>
                         <?=
                         \yiister\gentelella\widgets\Menu::widget(
                             [
                                 "items" => [
-                                    ["label" => "Home", "url" => "/", "icon" => "home"],
+                                    ["label" => "Principal", "url" => "/", "icon" => "home"],
                                     ["label" => "Layout", "url" => ["site/layout"], "icon" => "files-o"],
                                     ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                                     [
@@ -83,8 +85,8 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                         "icon" => "th",
                                         "url" => "#",
                                         "items" => [
-                                            ["label" => "Menu", "url" => ["site/menu"]],
-                                            ["label" => "Panel", "url" => ["site/panel"]],
+                                            ["label" => "Menu", "url" => ["site/Menu"]],
+                                            ["label" => "Panel", "url" => ["site/Panel"]],
                                         ],
                                     ],
                                     [
@@ -146,8 +148,8 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <div class="sidebar-footer hidden-small">
-                    <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <!-- <div class="sidebar-footer hidden-small"> -->
+                    <!-- <a data-toggle="tooltip" data-placement="top" title="Settings">
                         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                     </a>
                     <a data-toggle="tooltip" data-placement="top" title="FullScreen">
@@ -158,44 +160,39 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                     </a>
                     <a data-toggle="tooltip" data-placement="top" title="Logout">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                    </a>
-                </div>
+                    </a> -->
+                <!-- </div> -->
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- top navigation -->
         <div class="top_nav">
-
             <div class="nav_menu">
                 <nav class="" role="navigation">
                     <div class="nav toggle">
                         <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                     </div>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="">
-                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="http://placehold.it/128x128" alt="">John Doe
-                                <span class=" fa fa-angle-down"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                <li><a href="javascript:;">  Profile</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span class="badge bg-red pull-right">50%</span>
-                                        <span>Settings</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">Help</a>
-                                </li>
-                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
-                                </li>
-                            </ul>
-                        </li>
-
+                    <?php echo Nav::widget([
+                      'options' => ['class' => 'navbar-nav navbar-right'],
+                      'items'  => [
+                        Yii::$app->user->isGuest ?(
+                            ['label' => 'Iniciar Sesion', 'url' => ['/site/login']]
+                          ):(
+                            '<li>'
+                            . Html::beginForm(['/site/logout'], 'post')
+                            . Html::submitButton(
+                                'Cerrar Sesion (' . Yii::$app->user->identity->username . ')',
+                                ['class' => 'btn btn-link logout']
+                            )
+                            . Html::endForm()
+                            . '</li>'
+                          ),
+                            ['label' => 'Ajustes', 'url' => ['site/profile']],
+                      ]
+                    ]);
+                    ?>
+                    <!-- <ul class="nav navbar-nav navbar-right">
                         <li role="presentation" class="dropdown">
                             <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-envelope-o"></i>
@@ -269,7 +266,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                             </ul>
                         </li>
 
-                    </ul>
+                    </ul> -->
                 </nav>
             </div>
 

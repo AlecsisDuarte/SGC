@@ -8,9 +8,15 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\EntryForm;
 
 class SiteController extends Controller
 {
+  public function init()
+  {
+    parent::init();
+    Yii::$app->language = 'es'; 
+  }
     /**
      * @inheritdoc
      */
@@ -19,13 +25,17 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                // 'only' => ['logout'],
                 'rules' => [
                     [
-                        'actions' => ['logout'],
+                        'actions' => ['login','error'],
                         'allow' => true,
-                        'roles' => ['@'],
                     ],
+                    [
+                      'actions' => ['logout', 'index', 'error'],
+                      'allow' => true,
+                      'roles' => ['@']
+                    ]
                 ],
             ],
             'verbs' => [
@@ -91,8 +101,14 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
-        return $this->goHome();
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
+        }
+        return $this->render('login', [
+            'model' => $model,
+        ]);
+        // return $this->goHome();
     }
 
     /**
@@ -122,4 +138,22 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionSay($message = "Hello")
+    {
+        return $this->render('say', ['message' => $message]);
+    }
+
+    public function actionEntry()
+    {
+        $model = new EntryForm();
+        if($model->load(Yii::$app->request->post()) && $model->validate()){
+
+            return $this->render('entry-confirm', ['model' => $model]);
+        }else{
+
+            return $this->render('entry', ['model' => $model]);
+        }
+    }
+
 }
