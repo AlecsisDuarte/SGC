@@ -15,7 +15,7 @@ class SiteController extends Controller
   public function init()
   {
     parent::init();
-    Yii::$app->language = 'es'; 
+    Yii::$app->language = 'es';
   }
     /**
      * @inheritdoc
@@ -25,7 +25,6 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                // 'only' => ['logout'],
                 'rules' => [
                     [
                         'actions' => ['login','error'],
