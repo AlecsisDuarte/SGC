@@ -38,8 +38,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
 
     <div id="main_visi" class="main_container">
-
-        <div class="col-md-3 left_col">
+      <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
@@ -48,7 +47,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                 <div class="clearfix"></div>
 
                 <!-- menu prile quick info -->
-                <div class="profile">
+                <div class="profile" <?php if(Yii::$app->user->isGuest){echo('style="display: none;"');}?>>
                   <div class="profile_pic">
                         <img src="https://cdn.pixabay.com/photo/2016/04/22/04/57/graduation-1345143_1280.png"
                           alt="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295430_1280.png"
@@ -69,13 +68,11 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
                 <br />
 
-<?php if(!Yii::$app->user->isGuest)
-{
-?>
-                <!-- sidebar menu -->
-                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-                    <div class="menu_section">
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu" <?php if(Yii::$app->user->isGuest){echo('style="display: none;"');}?>>
+
+                    <div class="menu_section" >
                         <h3>Opciones</h3>
 
                         <?=
@@ -151,32 +148,9 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
                 </div>
                 <!-- /sidebar menu -->
-<?php
-}else{
-?>
-          <!-- sidebar menu -->
-          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-              <div class="menu_section">
-                <h3>Opciones</h3>
-
-                <?=
-                \yiister\gentelella\widgets\Menu::widget(
-                  [
-                    "items" => [
-                      ["label" => "Principal", "url" => "/", "icon" => "home"]
-                        ],
-                      ]
-                    )
-                  ?>
-                </div>
-
-              </div>
               <!-- /sidebar menu -->
 
-<?php
-}
-?>
 
                 <!-- /menu footer buttons -->
                 <!-- <div class="sidebar-footer hidden-small"> -->
@@ -197,18 +171,23 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
             </div>
         </div>
 
+
         <!-- top navigation -->
         <div class="top_nav">
             <div class="nav_menu">
                 <nav class="" role="navigation">
-                    <div class="nav toggle">
-                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-                    </div>
+                  <?php if(!Yii::$app->user->isGuest){
+                    echo('
+                      <div class="nav toggle">
+                          <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                      </div>
+                    ');
+                  }?>
                     <?php echo Nav::widget([
                       'options' => ['class' => 'navbar-nav navbar-right'],
                       'items'  => [
                         Yii::$app->user->isGuest ?(
-                            ['label' => 'Iniciar Sesion', 'url' => ['/site/login']]
+                            ['label' => 'Iniciar Sesion', 'url' => ['/site/login'], 'visible' => !(Yii::$app->user->isGuest),]
                           ):(
                             '<li>'
                             . Html::beginForm(['/site/logout'], 'post')
@@ -219,90 +198,16 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                             . Html::endForm()
                             . '</li>'
                           ),
-                            ['label' => 'Ajustes', 'url' => ['site/profile']],
+                            ['label' => 'Ajustes', 'url' => ['site/profile'], 'visible' => !(Yii::$app->user->isGuest),],
                       ]
                     ]);
                     ?>
-                    <!-- <ul class="nav navbar-nav navbar-right">
-                        <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green">6</span>
-                            </a>
-                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="text-center">
-                                        <a href="/">
-                                            <strong>See All Alerts</strong>
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
 
-                    </ul> -->
                 </nav>
             </div>
 
         </div>
-        <!-- /top navigation -->
+        <!-- /top navigation
 
         <!-- page content -->
         <div class="right_col" role="main">
@@ -329,7 +234,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
         </div>
         <!-- /page content -->
         <!-- footer content -->
-        <footer>
+        <footer <?php if(Yii::$app->user->isGuest){echo('style="display: none;"');} ?>>
             <div class="clearfix"></div>
         </footer>
         <!-- /footer content -->
@@ -337,7 +242,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
 </div>
 
-<div id="custom_notifications" class="custom-notifications dsp_none">
+<div id="custom_notifications" class="custom-notifications dsp_none" >
     <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
     </ul>
     <div class="clearfix"></div>

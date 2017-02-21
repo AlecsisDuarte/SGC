@@ -5,6 +5,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Iniciar Sesion';
 $this->params['breadcrumbs'][] = $this->title;
+
  ?>
 <html lang="en">
   <head>
@@ -13,8 +14,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
     <!--link href="css/main_login/bootstrap.min.css" rel="stylesheet"-->
@@ -26,14 +25,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <!--link href="css/main_login/animate.min.css" rel="stylesheet"-->
 
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <!-- <link href="../build/css/custom.min.css" rel="stylesheet"> -->
   </head>
 
   <body class="site-login">
     <div>
-      <a class="hiddenanchor" id="signup"></a>
-      <a class="hiddenanchor" id="signin"></a>
-
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
@@ -44,11 +40,11 @@ $this->params['breadcrumbs'][] = $this->title;
             <form>
             <h1><?= Html::encode($this->title) ?></h1>
               <div>
-                <?= $form->field($model, 'username')->label('Usuario')->textInput(['autofocus' => true])?>
+                <?= $form->field($model, 'usuario')->textInput(['autofocus' => true])?>
                 <!-- <input type="text" class="form-control" placeholder="Username" required="" /> -->
               </div>
               <div>
-                <?= $form->field($model, 'password')->label('Contraseña')->passwordInput() ?>
+                <?= $form->field($model, 'password')->passwordInput() ?>
               </div>
               <div>
                 <?= Html::submitButton('Entrar', ['class' => 'btn btn-default', 'name' => 'login-button']) ?>
@@ -58,8 +54,13 @@ $this->params['breadcrumbs'][] = $this->title;
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">New to site?
-                  <a href="#signup" class="to_register"> Create Account </a>
+                <p class="change_link">¿Nuevo en el Sitio?
+                  <a href="#signup" class="to_register" onclick="toggleRegister()"> Crea una Cuenta </a>
+                  <script type="text/javascript">
+                    function toggleRegister(){
+                      $("#register").toggle();
+                    }
+                  </script>
                 </p>
                 <div class="separator"></div>
 
