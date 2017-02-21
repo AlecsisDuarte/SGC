@@ -17,13 +17,13 @@ $this->params['breadcrumbs'][] = $this->title;
     <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
-    <!-- <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!--link href="css/main_login/bootstrap.min.css" rel="stylesheet"-->
     <!-- Font Awesome -->
-    <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!--link href="css/main_login/font-awesome.min.css" rel="stylesheet"-->
     <!-- NProgress -->
-    <!-- <link href="../vendors/nprogress/nprogress.css" rel="stylesheet"> -->
+    <!--link href="css/main_login/nprogress.css" rel="stylesheet"-->
     <!-- Animate.css -->
-    <!-- <link href="../vendors/animate.css/animate.min.css" rel="stylesheet"> -->
+    <!--link href="css/main_login/animate.min.css" rel="stylesheet"-->
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <form>
             <h1><?= Html::encode($this->title) ?></h1>
               <div>
-                <?= $form->field($model, 'username')->label('Usuario')->textInput(['autofocus' => true]) ?>
+                <?= $form->field($model, 'username')->label('Usuario')->textInput(['autofocus' => true])?>
                 <!-- <input type="text" class="form-control" placeholder="Username" required="" /> -->
               </div>
               <div>
@@ -61,6 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <p class="change_link">New to site?
                   <a href="#signup" class="to_register"> Create Account </a>
                 </p>
+                <div class="separator"></div>
 
                 <div class="clearfix"></div>
                 <br />
@@ -77,6 +78,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div id="register" class="animate form registration_form">
           <section class="login_content">
+            <?php $form = ActiveForm::begin([
+              'id' => 'createUser-form',
+              'layout' => 'horizontal'
+            ]); ?>
             <form>
               <h1>Crear Cuenta</h1>
               <div>
@@ -89,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <input type="password" class="form-control" placeholder="Password" required="" />
               </div>
               <div>
-                <a class="btn btn-default submit" href="index.html">Submit</a>
+                <a class="btn btn-default submit" href="index">Submit</a>
               </div>
 
               <div class="clearfix"></div>
@@ -108,6 +113,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
               </div>
             </form>
+            <?php ActiveForm::end(); ?>
           </section>
         </div>
       </div>
