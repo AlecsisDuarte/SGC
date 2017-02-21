@@ -28,3 +28,5 @@ Thumbs.db
 
 #tests/_output/*
 #tests/_support/_generated
+#Los archivos debug no se necesitan
+runtime/debug/*
