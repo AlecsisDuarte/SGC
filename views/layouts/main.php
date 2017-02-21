@@ -36,7 +36,8 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 <?php $this->beginBody(); ?>
 <div class="container body">
 
-    <div class="main_container">
+
+    <div id="main_visi" class="main_container">
 
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
@@ -68,11 +69,15 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
                 <br />
 
+<?php if(!Yii::$app->user->isGuest)
+{
+?>
                 <!-- sidebar menu -->
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
                     <div class="menu_section">
                         <h3>Opciones</h3>
+
                         <?=
                         \yiister\gentelella\widgets\Menu::widget(
                             [
@@ -146,6 +151,32 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
                 </div>
                 <!-- /sidebar menu -->
+<?php
+}else{
+?>
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+              <div class="menu_section">
+                <h3>Opciones</h3>
+
+                <?=
+                \yiister\gentelella\widgets\Menu::widget(
+                  [
+                    "items" => [
+                      ["label" => "Principal", "url" => "/", "icon" => "home"]
+                        ],
+                      ]
+                    )
+                  ?>
+                </div>
+
+              </div>
+              <!-- /sidebar menu -->
+
+<?php
+}
+?>
 
                 <!-- /menu footer buttons -->
                 <!-- <div class="sidebar-footer hidden-small"> -->
@@ -299,10 +330,6 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
         <!-- /page content -->
         <!-- footer content -->
         <footer>
-            <div class="pull-right">
-                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com" rel="nofollow" target="_blank">Colorlib</a><br />
-                Extension for Yii framework 2 by <a href="http://yiister.ru" rel="nofollow" target="_blank">Yiister</a>
-            </div>
             <div class="clearfix"></div>
         </footer>
         <!-- /footer content -->
