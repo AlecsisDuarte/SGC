@@ -13,7 +13,6 @@ use yii\bootstrap\NavBar;
 AppAsset::register($this);
 
 $bundle = yiister\gentelella\assets\Asset::register($this);
-
 ?>
 <?php $this->beginPage(); ?>
 <!DOCTYPE html>
@@ -80,7 +79,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                             [
                                 "items" => [
                                     ["label" => "Principal", "url" => "/", "icon" => "home"],
-                                    ["label" => "Layout", "url" => ["site/layout"], "icon" => "files-o"],
+                                    ["label" => "Contactanos", "url" => ["site/contact"], "icon" => "fa fa-envelope-open"],
                                     ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                                     [
                                         "label" => "Widgets",

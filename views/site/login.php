@@ -14,18 +14,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap -->
-    <!--link href="css/main_login/bootstrap.min.css" rel="stylesheet"-->
-    <!-- Font Awesome -->
-    <!--link href="css/main_login/font-awesome.min.css" rel="stylesheet"-->
-    <!-- NProgress -->
-    <!--link href="css/main_login/nprogress.css" rel="stylesheet"-->
-    <!-- Animate.css -->
-    <!--link href="css/main_login/animate.min.css" rel="stylesheet"-->
-
-    <!-- Custom Theme Style -->
-    <!-- <link href="../build/css/custom.min.css" rel="stylesheet"> -->
   </head>
 
   <body class="site-login">
