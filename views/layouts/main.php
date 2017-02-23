@@ -175,18 +175,14 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
         <div class="top_nav">
             <div class="nav_menu">
                 <nav class="" role="navigation">
-                  <?php if(!Yii::$app->user->isGuest){
-                    echo('
                       <div class="nav toggle">
                           <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                       </div>
-                    ');
-                  }?>
                     <?php echo Nav::widget([
                       'options' => ['class' => 'navbar-nav navbar-right'],
                       'items'  => [
                         Yii::$app->user->isGuest ?(
-                            ['label' => 'Iniciar Sesion', 'url' => ['/site/login'], 'visible' => !(Yii::$app->user->isGuest),]
+                            ['label' => 'Iniciar Sesion', 'url' => ['/site/login']]
                           ):(
                             '<li>'
                             . Html::beginForm(['/site/logout'], 'post')
@@ -197,7 +193,8 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                             . Html::endForm()
                             . '</li>'
                           ),
-                            ['label' => 'Ajustes', 'url' => ['site/profile'], 'visible' => !(Yii::$app->user->isGuest),],
+                          ['label' => 'Registrate', 'url' => ['/site/register'],'visible' => (Yii::$app->user->isGuest)],
+                            ['label' => 'Ajustes', 'url' => ['site/profile'], 'visible' => !(Yii::$app->user->isGuest)],
                       ]
                     ]);
                     ?>

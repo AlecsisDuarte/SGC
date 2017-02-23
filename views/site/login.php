@@ -23,20 +23,18 @@ $this->params['breadcrumbs'][] = $this->title;
           <section class="login_content">
             <?php $form = ActiveForm::begin([
               'id' => 'login-form',
-              'layout' => 'horizontal'
+              'layout' => 'inline'
             ]); ?>
             <form>
             <h1><?= Html::encode($this->title) ?></h1>
               <div>
-                <?= $form->field($model, 'usuario')->textInput(['autofocus' => true])?>
-                <!-- <input type="text" class="form-control" placeholder="Username" required="" /> -->
+                <?= $form->field($model, 'usuario')->textInput(['autofocus' => true])->input('usuario',['placeholder' => 'Usuario'])->label(false);?>
               </div>
               <div>
-                <?= $form->field($model, 'password')->passwordInput() ?>
+                <?= $form->field($model, 'password')->passwordInput()->input('password',['placeholder' => 'Contraseña'])->label(false); ?>
               </div>
               <div>
-                <?= Html::submitButton('Entrar', ['class' => 'btn btn-default', 'name' => 'login-button']) ?>
-                <!-- <a class="reset_pass" href="#">Lost your password?</a> -->
+                <?= Html::submitButton('Entrar', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
               </div>
 
               <div class="clearfix"></div>
@@ -56,49 +54,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <br />
 
                 <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
-                </div>
-              </div>
-            </form>
-            <?php ActiveForm::end(); ?>
-          </section>
-        </div>
-
-        <div id="register" class="animate form registration_form">
-          <section class="login_content">
-            <?php $form = ActiveForm::begin([
-              'id' => 'createUser-form',
-              'layout' => 'horizontal'
-            ]); ?>
-            <form>
-              <h1>Crear Cuenta</h1>
-              <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Email" required="" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
-              </div>
-              <div>
-                <a class="btn btn-default submit" href="index">Submit</a>
-              </div>
-
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                <p class="change_link">Already a member ?
-                  <a href="#signin" class="to_register"> Log in </a>
-                </p>
-
-                <div class="clearfix"></div>
-                <br />
-
-                <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                  <h1><i class="fa fa-wrench"></i> Sistema de Gestion de Calidad!</h1>
+                  <p>©2017 Todos los derechos reservados - BurnApps</p>
                 </div>
               </div>
             </form>
