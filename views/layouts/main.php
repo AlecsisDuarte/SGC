@@ -193,8 +193,8 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                             . Html::endForm()
                             . '</li>'
                           ),
-                          ['label' => 'Registrate', 'url' => ['/site/register'],'visible' => (Yii::$app->user->isGuest)],
-                            ['label' => 'Ajustes', 'url' => ['site/profile'], 'visible' => !(Yii::$app->user->isGuest)],
+                         ['label' => 'Registrate', 'url' => ['/site/register'],'visible' => (Yii::$app->user->isGuest)],
+                         ['label' => 'Ajustes', 'url' => ['site/profile'], 'visible' => !(Yii::$app->user->isGuest)],
                       ]
                     ]);
                     ?>
