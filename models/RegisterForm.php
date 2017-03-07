@@ -27,7 +27,8 @@
         {
             return [
                 // usuario, contraseña, contraseña2, correo y verificacion son requeridos
-                [['usuario', 'password','password2','correro','verificacion'],'require'],
+                [['usuario', 'password','password2','correo','verificacion'],'required'],
+                ['correo','email'],
                 ['password', 'validatePassword'],
                 ['password2', 'validatePassword'],
             ];

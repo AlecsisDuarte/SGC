@@ -10,30 +10,20 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     public $authKey;
     public $accessToken;
 
-    private static $users = [
-        '100' => [
-            'id' => '100',
-            'username' => 'admin',
-            'password' => 'admin',
-            'authKey' => 'test100key',
-            'accessToken' => '100-token',
-        ],
-        '101' => [
-            'id' => '101',
-            'username' => 'demo',
-            'password' => 'demo',
-            'authKey' => 'test101key',
-            'accessToken' => '101-token',
-        ],
-    ];
-
-
     /**
      * @inheritdoc
      */
     public static function findIdentity($id)
     {
-        return isset(self::$users[$id]) ? new static(self::$users[$id]) : null;
+      $usuario = (new \yii\db\Query())
+                  ->select('*')
+                  ->where(['id' => $id])
+                  ->from('users')
+                  ->one();
+          if($usuario === false){
+            return null;
+          }
+          return new static($usuario);
     }
 
     /**
@@ -41,13 +31,15 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        foreach (self::$users as $user) {
-            if ($user['accessToken'] === $token) {
-                return new static($user);
-            }
-        }
-
+      $usuario = (new \yii\db\Query())
+                  ->select('*')
+                  ->where(['accessToken' => $token])
+                  ->from('users')
+                  ->one();
+      if($usuario === false){
         return null;
+      }
+      return new static($usuario);
     }
 
     /**
@@ -58,13 +50,15 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
      */
     public static function findByUsername($username)
     {
-        foreach (self::$users as $user) {
-            if (strcasecmp($user['username'], $username) === 0) {
-                return new static($user);
-            }
-        }
-
+      $usuario = (new \yii\db\Query())
+                  ->select('*')
+                  ->where(['username' => $username])
+                  ->from('users')
+                  ->one();
+      if($usuario === false){
         return null;
+      }
+      return new static($usuario);
     }
 
     /**
@@ -73,6 +67,11 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     public function getId()
     {
         return $this->id;
+    }
+
+    public function getUsername()
+    {
+      return $this->username;
     }
 
     /**
@@ -99,6 +98,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
      */
     public function validatePassword($password)
     {
-        return $this->password === $password;
+      return $password === $this->password;
+      // return password_verify($password, $this->password);
     }
 }
