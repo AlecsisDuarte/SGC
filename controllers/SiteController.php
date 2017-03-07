@@ -101,13 +101,13 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-        return $this->render('login', [
-            'model' => $model,
-        ]);
-        // return $this->goHome();
+        // if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        //     return $this->goBack();
+        // }
+        // return $this->render('login', [
+        //     'model' => $model,
+        // ]);
+        return $this->goHome();
     }
 
     /**
