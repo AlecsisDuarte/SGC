@@ -14404,3 +14404,655 @@ $_SERVER = [
     'REQUEST_TIME' => 1487650160
 >>>>>>> eaca678bc5ce3c96b789c1d7ec170a455c3987db
 ]
+2017-03-07 03:53:29 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:53:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39556'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488858809.0795
+    'REQUEST_TIME' => 1488858809
+]
+2017-03-07 03:53:29 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:53:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '6b5i6lbg283m2cbl1c47fu7h07'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39558'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=6b5i6lbg283m2cbl1c47fu7h07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488858809.1467
+    'REQUEST_TIME' => 1488858809
+]
+2017-03-07 03:54:26 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:54:26 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'RWhhai1YazYuMg8BeWg4cgYfOTBaOyV3NSUqAF8QU1sHGlA5ThYnRg=='
+    'LoginForm' => [
+        'usuario' => 'admin'
+        'password' => 'admin'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '6b5i6lbg283m2cbl1c47fu7h07'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39596'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=6b5i6lbg283m2cbl1c47fu7h07; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '139'
+    'HTTP_CONTENT_LENGTH' => '139'
+    'REQUEST_TIME_FLOAT' => 1488858866.0948
+    'REQUEST_TIME' => 1488858866
+]
+2017-03-07 03:54:26 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:54:26 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'kitiq1l2lpu20v28fi746gi0a7'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39598'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=kitiq1l2lpu20v28fi746gi0a7; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488858866.1163
+    'REQUEST_TIME' => 1488858866
+]
+2017-03-07 03:54:28 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:54:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'ZXEwSFp2bVoOK14jDkY.HiYGaBItFSMbFTx7Iig.VTcnAwEbOTghKg=='
+]
+
+$_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'kitiq1l2lpu20v28fi746gi0a7'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39624'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=kitiq1l2lpu20v28fi746gi0a7; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CONTENT_LENGTH' => '66'
+    'REQUEST_TIME_FLOAT' => 1488858868.6583
+    'REQUEST_TIME' => 1488858868
+]
+2017-03-07 03:58:12 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:58:12 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'a54af3mefs492hf1pjtvo7jeq5'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39712'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=a54af3mefs492hf1pjtvo7jeq5; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488859092.3478
+    'REQUEST_TIME' => 1488859092
+]
+2017-03-07 03:58:12 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:58:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'a54af3mefs492hf1pjtvo7jeq5'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39714'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=a54af3mefs492hf1pjtvo7jeq5; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488859092.3906
+    'REQUEST_TIME' => 1488859092
+]
+2017-03-07 03:58:17 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:58:17 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'T1BybnUxVnUkChwFIQEFMQwnKjQCUhg0Px05BAd5bhgNIkM9Fn8aBQ=='
+    'LoginForm' => [
+        'usuario' => 'admin'
+        'password' => 'admin'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'a54af3mefs492hf1pjtvo7jeq5'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39746'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=a54af3mefs492hf1pjtvo7jeq5; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '139'
+    'HTTP_CONTENT_LENGTH' => '139'
+    'REQUEST_TIME_FLOAT' => 1488859097.031
+    'REQUEST_TIME' => 1488859097
+]
+2017-03-07 03:58:17 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:58:17 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'apqn5nd47uhefkmnq1lj0c6s21'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39748'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=apqn5nd47uhefkmnq1lj0c6s21; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488859097.0506
+    'REQUEST_TIME' => 1488859097
+]
+2017-03-07 03:58:19 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:58:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'LnpqUjF5RXRFIAQ5ZUkWMG0NMghGGgs1XjchOEMxfRlsCFsBUjcJBA=='
+]
+
+$_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'apqn5nd47uhefkmnq1lj0c6s21'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39772'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=apqn5nd47uhefkmnq1lj0c6s21; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CONTENT_LENGTH' => '66'
+    'REQUEST_TIME_FLOAT' => 1488859099.0586
+    'REQUEST_TIME' => 1488859099
+]
+2017-03-07 03:58:19 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:58:19 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'knoltt08hcj5g9kg4bf5g395s3'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39774'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=knoltt08hcj5g9kg4bf5g395s3; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488859099.1048
+    'REQUEST_TIME' => 1488859099
+]
+2017-03-07 03:58:19 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28847 bytes' 
+
+in /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/alejandro...', 88, Array)
+#1 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('<<<<<<< HEAD\na:...')
+#2 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/alejandro...', Array)
+#3 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/alejandro-ruiz/Escritorio/SGC/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-03-07 03:58:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_identity' => '8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'knoltt08hcj5g9kg4bf5g395s3'
+    '_csrf' => '51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/alejandro-ruiz/Escritorio/SGC/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39776'
+    'SERVER_SOFTWARE' => 'PHP 7.0.15-0ubuntu0.16.04.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/alejandro-ruiz/Escritorio/SGC/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_COOKIE' => '_identity=8dcd407a4c4b2ebbed998a5d0c250aedcf645db3aa871187182a690ee3dfb21fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=knoltt08hcj5g9kg4bf5g395s3; _csrf=51264fd9a34d92761c36b9e3540c04fa62bb6b664df916e153fa55888ec4e638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZnkT0SDCwXZwcNApMKjrH8mBr1ScNLp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'REQUEST_TIME_FLOAT' => 1488859099.1151
+    'REQUEST_TIME' => 1488859099
+]
