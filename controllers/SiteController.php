@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\EntryForm;
+use app\models\RegisterForm;
 
 class SiteController extends Controller
 {
@@ -27,7 +28,7 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login','error', 'register'],
+                        'actions' => ['login','register','error'],
                         'allow' => true,
                     ],
                     [
@@ -153,6 +154,17 @@ class SiteController extends Controller
 
             return $this->render('entry', ['model' => $model]);
         }
+    }
+
+    public function actionRegister()
+    {
+      $model = new RegisterForm();
+      if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+          return $this->goBack();
+      }
+      return $this->render('register', [
+          'model' => $model,
+      ]);
     }
 
 }

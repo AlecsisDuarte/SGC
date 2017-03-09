@@ -23,10 +23,10 @@ $this->params['breadcrumbs'][] = $this->title;
       <section class="login_content">
         <?php $form = ActiveForm::begin([
           'id' => 'login-form',
-          'layout' => 'inline',
+          'layout' => 'horizontal',
           'fieldConfig' => [
-            'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-            'labelOptions' => ['class' => 'col-lg-1 control-label'],
+            'template' => "{label}\n<div class=\"\">{input}</div>\n<div class=\"\">{error}</div>",
+            'labelOptions' => ['class' => ' control-label'],
           ],
         ]); ?>
         <h1><?= Html::encode($this->title) ?></h1>
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
           <?= $form->field($model, 'password')->passwordInput()->input('password', ['placeholder' => 'Contraseña'])->label(false); ?>
         </div>
         <div class="form-group">
-          <div class="col-lg-offset-1 col-lg-11">
+          <div>
             <?= Html::submitButton('Entrar', ['class' => 'btn btn-info', 'name' => 'login-button']) ?>
           </div>
         </div>

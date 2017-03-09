@@ -45,7 +45,9 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
           <div class="clearfix"></div>
 
           <!-- menu prile quick info -->
-          <div class="profile" <?php if(Yii::$app->user->isGuest){echo('style="display: none;"');}?>>
+          <div class="profile" <?php if (Yii::$app->user->isGuest) {
+    echo('style="display: none;"');
+}?>>
             <div class="profile_pic">
               <img src="https://cdn.pixabay.com/photo/2016/04/22/04/57/graduation-1345143_1280.png"
               alt="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295430_1280.png"
@@ -68,7 +70,9 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
 
             <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu" <?php if(Yii::$app->user->isGuest){echo('style="display: none;"');}?>>
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu" <?php if (Yii::$app->user->isGuest) {
+                      echo('style="display: none;"');
+                  }?>>
 
               <div class="menu_section" >
                 <h3>Opciones</h3>
@@ -208,7 +212,9 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
               </div>
               <!-- /page content -->
               <!-- footer content -->
-              <footer <?php if(Yii::$app->user->isGuest){echo('style="display: none;"');} ?>>
+              <footer <?php if (Yii::$app->user->isGuest) {
+                        echo('style="display: none;"');
+                    } ?>>
                 <div class="clearfix"></div>
               </footer>
               <!-- /footer content -->
